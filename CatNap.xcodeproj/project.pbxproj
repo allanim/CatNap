@@ -21,6 +21,8 @@
 		9D7063FD22A888CE00DD0875 /* lose.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 9D7063F822A888CE00DD0875 /* lose.mp3 */; };
 		9D7063FE22A888CE00DD0875 /* backgroundMusic.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 9D7063F922A888CE00DD0875 /* backgroundMusic.mp3 */; };
 		9D70640122A898A800DD0875 /* Cat.sks in Resources */ = {isa = PBXBuildFile; fileRef = 9D70640022A898A800DD0875 /* Cat.sks */; };
+		9DABFAEA22AB21F8007E0B09 /* BedNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DABFAE922AB21F8007E0B09 /* BedNode.swift */; };
+		9DABFAEC22AB2637007E0B09 /* CatNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DABFAEB22AB2637007E0B09 /* CatNode.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -40,6 +42,8 @@
 		9D7063F822A888CE00DD0875 /* lose.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = lose.mp3; sourceTree = "<group>"; };
 		9D7063F922A888CE00DD0875 /* backgroundMusic.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = backgroundMusic.mp3; sourceTree = "<group>"; };
 		9D70640022A898A800DD0875 /* Cat.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = Cat.sks; sourceTree = "<group>"; };
+		9DABFAE922AB21F8007E0B09 /* BedNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BedNode.swift; sourceTree = "<group>"; };
+		9DABFAEB22AB2637007E0B09 /* CatNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatNode.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,6 +76,7 @@
 		9D7063DB22A8831700DD0875 /* CatNap */ = {
 			isa = PBXGroup;
 			children = (
+				9DABFAED22AB266E007E0B09 /* Nodes */,
 				9D7063FF22A8985500DD0875 /* Scenes */,
 				9D7063F422A888CE00DD0875 /* Sounds */,
 				9D7063DC22A8831700DD0875 /* AppDelegate.swift */,
@@ -105,6 +110,15 @@
 				9D70640022A898A800DD0875 /* Cat.sks */,
 			);
 			path = Scenes;
+			sourceTree = "<group>";
+		};
+		9DABFAED22AB266E007E0B09 /* Nodes */ = {
+			isa = PBXGroup;
+			children = (
+				9DABFAE922AB21F8007E0B09 /* BedNode.swift */,
+				9DABFAEB22AB2637007E0B09 /* CatNode.swift */,
+			);
+			path = Nodes;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -187,6 +201,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				9D7063E322A8831700DD0875 /* GameScene.swift in Sources */,
+				9DABFAEC22AB2637007E0B09 /* CatNode.swift in Sources */,
+				9DABFAEA22AB21F8007E0B09 /* BedNode.swift in Sources */,
 				9D7063E522A8831700DD0875 /* GameViewController.swift in Sources */,
 				9D7063DD22A8831700DD0875 /* AppDelegate.swift in Sources */,
 			);
