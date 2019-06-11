@@ -27,6 +27,7 @@ struct PhysicsCategory {
     static let Bed: UInt32 = 0b100 // 4
     static let Edge: UInt32 = 0b1000 // 8
     static let Label: UInt32 = 0b10000
+    static let Spring: UInt32 = 0b100000 // 32
 }
 
 class GameScene: SKScene, SKPhysicsContactDelegate {
@@ -38,6 +39,16 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
     var catNode: CatNode!
     
     var playable = true
+    
+    //1
+    var currentLevel: Int = 0
+    //2
+    class func level(levelNum: Int) -> GameScene? {
+        let scene = GameScene(fileNamed: "Level\(levelNum)")!
+        scene.currentLevel = levelNum
+        scene.scaleMode = .aspectFill
+        return scene
+    }
     
     override func didMove(to view: SKView) {
         
@@ -89,6 +100,7 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
         SKTAudio.sharedInstance().playBackgroundMusic("backgroundMusic.mp3")
         
     }
+
     
     func didBegin(_ contact: SKPhysicsContact) {
         if !playable {
@@ -114,9 +126,10 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
     }
     
     func newGame() {
-        let scene = GameScene(fileNamed:"GameScene")
-        scene!.scaleMode = scaleMode
-        view!.presentScene(scene)
+//        let scene = GameScene(fileNamed:"GameScene")
+//        scene!.scaleMode = scaleMode
+//        view!.presentScene(scene)
+        view!.presentScene(GameScene.level(levelNum: currentLevel))
     }
     
     func lose() {
@@ -143,6 +156,14 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
         catNode.curlAt(scenePoint: bedNode.position)
     }
     
+    override func didSimulatePhysics() {
+        if playable {
+            if abs(catNode.parent!.zRotation) >
+                CGFloat(25).degreesToRadians() {
+                lose()
+            }
+        }
+    }
     
 //    func touchDown(atPoint pos : CGPoint) {
 //        if let n = self.spinnyNode?.copy() as! SKShapeNode? {

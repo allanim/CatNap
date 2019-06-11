@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9D0F280622AF1A5600114C3A /* Level2.sks in Resources */ = {isa = PBXBuildFile; fileRef = 9D0F280522AF1A5600114C3A /* Level2.sks */; };
+		9D0F280A22AF1D4000114C3A /* SpringNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D0F280922AF1D4000114C3A /* SpringNode.swift */; };
 		9D3EEF1222AB41D000F91397 /* MessageNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D3EEF1122AB41D000F91397 /* MessageNode.swift */; };
 		9D3EEF1522AB447300F91397 /* CatWakeUp.sks in Resources */ = {isa = PBXBuildFile; fileRef = 9D3EEF1322AB447300F91397 /* CatWakeUp.sks */; };
 		9D3EEF1622AB447300F91397 /* CatCurl.sks in Resources */ = {isa = PBXBuildFile; fileRef = 9D3EEF1422AB447300F91397 /* CatCurl.sks */; };
@@ -42,6 +44,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		9D0F280522AF1A5600114C3A /* Level2.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = Level2.sks; sourceTree = "<group>"; };
+		9D0F280922AF1D4000114C3A /* SpringNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpringNode.swift; sourceTree = "<group>"; };
 		9D3EEF1122AB41D000F91397 /* MessageNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageNode.swift; sourceTree = "<group>"; };
 		9D3EEF1322AB447300F91397 /* CatWakeUp.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = CatWakeUp.sks; sourceTree = "<group>"; };
 		9D3EEF1422AB447300F91397 /* CatCurl.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = CatCurl.sks; sourceTree = "<group>"; };
@@ -143,6 +147,7 @@
 				9D3EEF1322AB447300F91397 /* CatWakeUp.sks */,
 				9D7063DE22A8831700DD0875 /* GameScene.sks */,
 				9D70640022A898A800DD0875 /* Cat.sks */,
+				9D0F280522AF1A5600114C3A /* Level2.sks */,
 			);
 			path = Scenes;
 			sourceTree = "<group>";
@@ -154,6 +159,7 @@
 				9DABFAEB22AB2637007E0B09 /* CatNode.swift */,
 				9DABFBBC22AB3BCD007E0B09 /* BlockNode.swift */,
 				9D3EEF1122AB41D000F91397 /* MessageNode.swift */,
+				9D0F280922AF1D4000114C3A /* SpringNode.swift */,
 			);
 			path = Nodes;
 			sourceTree = "<group>";
@@ -239,6 +245,7 @@
 				9D7063DF22A8831700DD0875 /* GameScene.sks in Resources */,
 				9D7063FD22A888CE00DD0875 /* lose.mp3 in Resources */,
 				9D7063EA22A8831800DD0875 /* Assets.xcassets in Resources */,
+				9D0F280622AF1A5600114C3A /* Level2.sks in Resources */,
 				9D7063FC22A888CE00DD0875 /* win.mp3 in Resources */,
 				9D7063ED22A8831800DD0875 /* LaunchScreen.storyboard in Resources */,
 				9D7063FA22A888CE00DD0875 /* mrreow.mp3 in Resources */,
@@ -274,6 +281,7 @@
 				9DABFB9522AB33CB007E0B09 /* Int+Extensions.swift in Sources */,
 				9D7063E522A8831700DD0875 /* GameViewController.swift in Sources */,
 				9DABFB9E22AB33CB007E0B09 /* CGFloat+Extensions.swift in Sources */,
+				9D0F280A22AF1D4000114C3A /* SpringNode.swift in Sources */,
 				9DABFB9D22AB33CB007E0B09 /* Vector3.swift in Sources */,
 				9D7063DD22A8831700DD0875 /* AppDelegate.swift in Sources */,
 				9D3EEF1222AB41D000F91397 /* MessageNode.swift in Sources */,
