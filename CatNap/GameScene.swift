@@ -36,6 +36,8 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
     private var label : SKLabelNode?
     private var spinnyNode : SKShapeNode?
     
+    var hookBaseNode: HookBaseNode?
+    
     var bedNode: BedNode!
     var catNode: CatNode!
     
@@ -100,6 +102,13 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
         
         SKTAudio.sharedInstance().playBackgroundMusic("backgroundMusic.mp3")
         
+        // rotation
+//        let rotationConstraint = SKConstraint.zRotation(
+//            SKRange(lowerLimit: -π/4, upperLimit: π/4))
+//        catNode.parent!.constraints = [rotationConstraint]
+        
+        hookBaseNode = childNode(withName: "hookBase") as? HookBaseNode
+        
     }
 
     
@@ -110,6 +119,7 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
         
         let collision = contact.bodyA.categoryBitMask
             | contact.bodyB.categoryBitMask
+        
         if collision == PhysicsCategory.Cat | PhysicsCategory.Bed {
             print("SUCCESS")
             win()
@@ -117,6 +127,12 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
             | PhysicsCategory.Edge {
             print("FAIL")
             lose()
+        }
+        
+        if collision == PhysicsCategory.Cat | PhysicsCategory.Hook
+            && hookBaseNode?.isHooked == false {
+            hookBaseNode!.hookCat(catPhysicsBody:
+                catNode.parent!.physicsBody!)
         }
     }
     
@@ -158,12 +174,14 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
     }
     
     override func didSimulatePhysics() {
-        if playable {
+//        if playable {
+        if playable && hookBaseNode?.isHooked != true {
             if abs(catNode.parent!.zRotation) >
                 CGFloat(25).degreesToRadians() {
                 lose()
             }
         }
+        
     }
     
 //    func touchDown(atPoint pos : CGPoint) {
