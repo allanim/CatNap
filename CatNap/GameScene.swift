@@ -161,6 +161,10 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
         run(SKAction.afterDelay(5, runBlock: newGame))
         
         catNode.wakeUp()
+        
+        if currentLevel > 1 {
+            currentLevel -= 1
+        }
     }
 
     func win() {
@@ -171,6 +175,10 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
         run(SKAction.afterDelay(3, runBlock: newGame))
         
         catNode.curlAt(scenePoint: bedNode.position)
+        
+        if currentLevel < 3 {
+            currentLevel += 1
+        }
     }
     
     override func didSimulatePhysics() {
