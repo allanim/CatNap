@@ -12,6 +12,7 @@
 		9D0F280E22B0660C00114C3A /* Level3.sks in Resources */ = {isa = PBXBuildFile; fileRef = 9D0F280C22B0660C00114C3A /* Level3.sks */; };
 		9D0F281222B066A400114C3A /* Level2.sks in Resources */ = {isa = PBXBuildFile; fileRef = 9D0F281122B066A400114C3A /* Level2.sks */; };
 		9D0F281622B068F500114C3A /* HookBaseNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D0F281522B068F500114C3A /* HookBaseNode.swift */; };
+		9D0F281C22B08B9E00114C3A /* StoneNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D0F281B22B08B9E00114C3A /* StoneNode.swift */; };
 		9D3EEF1222AB41D000F91397 /* MessageNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D3EEF1122AB41D000F91397 /* MessageNode.swift */; };
 		9D3EEF1522AB447300F91397 /* CatWakeUp.sks in Resources */ = {isa = PBXBuildFile; fileRef = 9D3EEF1322AB447300F91397 /* CatWakeUp.sks */; };
 		9D3EEF1622AB447300F91397 /* CatCurl.sks in Resources */ = {isa = PBXBuildFile; fileRef = 9D3EEF1422AB447300F91397 /* CatCurl.sks */; };
@@ -52,6 +53,7 @@
 		9D0F280C22B0660C00114C3A /* Level3.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = Level3.sks; sourceTree = "<group>"; };
 		9D0F281122B066A400114C3A /* Level2.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = Level2.sks; sourceTree = "<group>"; };
 		9D0F281522B068F500114C3A /* HookBaseNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HookBaseNode.swift; sourceTree = "<group>"; };
+		9D0F281B22B08B9E00114C3A /* StoneNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoneNode.swift; sourceTree = "<group>"; };
 		9D3EEF1122AB41D000F91397 /* MessageNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageNode.swift; sourceTree = "<group>"; };
 		9D3EEF1322AB447300F91397 /* CatWakeUp.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = CatWakeUp.sks; sourceTree = "<group>"; };
 		9D3EEF1422AB447300F91397 /* CatCurl.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = CatCurl.sks; sourceTree = "<group>"; };
@@ -169,6 +171,7 @@
 				9D3EEF1122AB41D000F91397 /* MessageNode.swift */,
 				9D0F280922AF1D4000114C3A /* SpringNode.swift */,
 				9D0F281522B068F500114C3A /* HookBaseNode.swift */,
+				9D0F281B22B08B9E00114C3A /* StoneNode.swift */,
 			);
 			path = Nodes;
 			sourceTree = "<group>";
@@ -283,6 +286,7 @@
 				9DABFB9A22AB33CB007E0B09 /* CGPoint+Extensions.swift in Sources */,
 				9DABFBBD22AB3BCD007E0B09 /* BlockNode.swift in Sources */,
 				9DABFB9822AB33CB007E0B09 /* SKAction+SpecialEffects.swift in Sources */,
+				9D0F281C22B08B9E00114C3A /* StoneNode.swift in Sources */,
 				9DABFB9C22AB33CB007E0B09 /* SKTAudio.swift in Sources */,
 				9DABFB9922AB33CB007E0B09 /* SKNode+Extensions.swift in Sources */,
 				9DABFB9B22AB33CB007E0B09 /* SKTEffects.swift in Sources */,
