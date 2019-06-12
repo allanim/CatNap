@@ -13,6 +13,7 @@
 		9D0F0E8122B1BD64003359AE /* Level6.sks in Resources */ = {isa = PBXBuildFile; fileRef = 9D0F0E7F22B1BD64003359AE /* Level6.sks */; };
 		9D0F0E8222B1BD64003359AE /* Level5.sks in Resources */ = {isa = PBXBuildFile; fileRef = 9D0F0E8022B1BD64003359AE /* Level5.sks */; };
 		9D0F0E8422B1BDC7003359AE /* PictureNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D0F0E8322B1BDC7003359AE /* PictureNode.swift */; };
+		9D0F0E8622B1C052003359AE /* DiscoBallNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D0F0E8522B1C052003359AE /* DiscoBallNode.swift */; };
 		9D0F280A22AF1D4000114C3A /* SpringNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D0F280922AF1D4000114C3A /* SpringNode.swift */; };
 		9D0F280D22B0660C00114C3A /* Level1.sks in Resources */ = {isa = PBXBuildFile; fileRef = 9D0F280B22B0660C00114C3A /* Level1.sks */; };
 		9D0F280E22B0660C00114C3A /* Level3.sks in Resources */ = {isa = PBXBuildFile; fileRef = 9D0F280C22B0660C00114C3A /* Level3.sks */; };
@@ -60,6 +61,7 @@
 		9D0F0E7F22B1BD64003359AE /* Level6.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = Level6.sks; sourceTree = "<group>"; };
 		9D0F0E8022B1BD64003359AE /* Level5.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = Level5.sks; sourceTree = "<group>"; };
 		9D0F0E8322B1BDC7003359AE /* PictureNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PictureNode.swift; sourceTree = "<group>"; };
+		9D0F0E8522B1C052003359AE /* DiscoBallNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiscoBallNode.swift; sourceTree = "<group>"; };
 		9D0F280922AF1D4000114C3A /* SpringNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpringNode.swift; sourceTree = "<group>"; };
 		9D0F280B22B0660C00114C3A /* Level1.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = Level1.sks; sourceTree = "<group>"; };
 		9D0F280C22B0660C00114C3A /* Level3.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = Level3.sks; sourceTree = "<group>"; };
@@ -198,6 +200,7 @@
 				9D0F281522B068F500114C3A /* HookBaseNode.swift */,
 				9D0F281B22B08B9E00114C3A /* StoneNode.swift */,
 				9D0F0E8322B1BDC7003359AE /* PictureNode.swift */,
+				9D0F0E8522B1C052003359AE /* DiscoBallNode.swift */,
 			);
 			path = Nodes;
 			sourceTree = "<group>";
@@ -319,6 +322,7 @@
 				9DABFBBD22AB3BCD007E0B09 /* BlockNode.swift in Sources */,
 				9DABFB9822AB33CB007E0B09 /* SKAction+SpecialEffects.swift in Sources */,
 				9D0F281C22B08B9E00114C3A /* StoneNode.swift in Sources */,
+				9D0F0E8622B1C052003359AE /* DiscoBallNode.swift in Sources */,
 				9DABFB9C22AB33CB007E0B09 /* SKTAudio.swift in Sources */,
 				9DABFB9922AB33CB007E0B09 /* SKNode+Extensions.swift in Sources */,
 				9DABFB9B22AB33CB007E0B09 /* SKTEffects.swift in Sources */,
