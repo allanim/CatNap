@@ -176,7 +176,7 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
         
         catNode.curlAt(scenePoint: bedNode.position)
         
-        if currentLevel < 3 {
+        if currentLevel < 6 {
             currentLevel += 1
         }
     }
